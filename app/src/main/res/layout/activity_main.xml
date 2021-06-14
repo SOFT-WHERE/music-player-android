@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F6F2F1"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="173dp"
+        android:layout_height="163dp"
+
+        android:src="@drawable/music1" />
+
+    <SeekBar
+        android:id="@+id/seek_time"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+        
+        <TextView
+            android:id="@+id/elapsed_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:11"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/remaining_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3:11"
+            android:layout_marginLeft="260dp"
+            />
+        
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/play_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/play"
+        android:layout_marginTop="20dp"
+        android:onClick="play"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_volume"/>
+
+        <SeekBar
+            android:id="@+id/seek_vol"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:progress="50"
+            android:max="100"
+            />
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_baseline_volume2"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:text="DESIGNED BY ASAD"
+        android:gravity="center"
+        android:background="#6A7FF8"
+        android:textColor="#021B03"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>
